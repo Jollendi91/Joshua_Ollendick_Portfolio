@@ -9,9 +9,21 @@
 </head>
 
 <body>
-    <nav role="navigation">
+    
+    <div class="mobile-nav">
         <h1>Joshua Ollendick</h1>
-        <div>Open</div>
+        <button class="hamburger-menu" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav role="navigation" class="mobile-nav-links">
+        <ul>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
     </nav>
     <main role="main">
         <header role="banner">
@@ -19,6 +31,7 @@
             <p>I am a Full Stack Web Developer based in Kansas City, Kansas. I am currently available for work. Explore below to learn more about me and my work</p>
         </header>
         <section class="about-me">
+            <h2>About</h2>
             <p>I consider myself a creator and a collaborator, a lover of science and a nerd for technology, a seeker of knowledge and a learner of life, an actor of the stage and a contributor of the arts. The ability to breathe life into an idea, to give form to something that previously did not exist, is one of the most exhilarating feelings for me. I believe technology should move us toward a future that works in harmony with our planet, not against it. I am fascinated by how developers such as myself can be a catalyst for this change. Feel free to contact me or view some of my recent work below. </p>
         </section>
         <section class="projects">
@@ -113,6 +126,6 @@
         </section>
     </main>
     <footer role="content-info">&copy; Joshua Ollendick 2018</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
-
 </html>
