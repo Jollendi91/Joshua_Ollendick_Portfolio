@@ -54,9 +54,12 @@ h1 {
 .hamburger-menu {
   margin: 0 15px;
   width: 40px;
+  height: 30px;
   position: relative;
   border: none;
+  outline: none;
   background: none;
+  transition: all .5s ease;
 }
 
 span {
@@ -66,6 +69,41 @@ span {
   margin: 6px 0;
   border-radius: 9px;
   background-color: #444;
+  position: absolute;
+  left: 0;
+}
+
+span:nth-child(1) {
+  top: 0;
+  transition: transform .5s ease, top .5s ease .5s;
+}
+
+span:nth-child(2) {
+  top: 10px;
+  transition: visibility .5s ease;
+}
+
+span:nth-child(3) {
+  top: 20px;
+  transition: transform .5s ease, top .5s ease .5s;
+}
+
+.close span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+  transition: top .5s ease, transform .5s ease .5s;
+}
+
+.close span:nth-child(2) {
+  visibility: hidden;
+  transition: all .5s ease;
+  transition: visibility .5s ease;
+}
+
+.close span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+  transition: top .5s ease, transform .5s ease .5s;
 }
 
 /*Mobile Nav Links*/
