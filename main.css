@@ -43,6 +43,7 @@ section:nth-child(even) {
   height: 100px;
   justify-content: space-between;
   align-items: center;
+  background-color: #FDFFFC;
 }
 
 h1 {
@@ -77,11 +78,13 @@ span {
   justify-content: center;
   margin-top: -250px;
   background-color: #FDFFFC;
+  transition: all 0.75s ease;
 }
 
 .expand {
   height: 100vh;
   margin-top: -100px;
+  transition: all 0.75s ease;
 }
 
 .mobile-nav-links ul {
