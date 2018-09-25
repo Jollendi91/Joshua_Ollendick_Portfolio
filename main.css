@@ -11,12 +11,7 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -179,6 +174,14 @@ h1 {
   padding: 20px;
   border-top: 1px solid #444;
   font-size: 1.25em;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.mobile-nav-links li:hover {
+  font-size: 1.4em;
+  color: #D7263D;
+  transition: all .5s ease;
 }
 
 .mobile-nav-links li:last-child {
@@ -278,8 +281,15 @@ canvas {
   margin: 0 5px;
   border: 2px solid #12355B;
   color: #FDFFFC;
+  font-weight: bold;
   background-color: #12355B;
   padding: 2px 7px;
+  transition: all .5s ease;
+}
+
+.project-links a:hover {
+  padding: 4px 9px;
+  transition: all .5s ease;
 }
 
 .project-links a:nth-child(1) {

@@ -1,8 +1,9 @@
+// Handle Mobile Naviagation Display
 function listenForMobileNavClick() {
   $('.hamburger-menu').click(() => {
     toggleMobileNav();
-  })
-}
+  });
+};
 
 function toggleMobileNav() {
   $('.mobile-nav-links').toggleClass('expand');
@@ -11,7 +12,16 @@ function toggleMobileNav() {
     $('.hamburger-menu').attr('aria-label', 'Close navigation menu');
   } else {
     $('.hamburger-menu').attr('aria-label', 'Open navigation menu');
-  }
+  };
+};
+
+// More Arrow Scroll 
+function listenForArrowClick() {
+  $('.more-arrow').click(() => {
+    $('html, body').animate({
+      scrollTop: ($('#about').offset().top - 100)
+    }, 1000, 'swing');
+  });
 }
 
 // Navigation Scroll
@@ -19,7 +29,7 @@ function scrollPage(target) {
   $('html, body').animate({
     scrollTop: ($(`#${target}`).offset().top - 100)
   }, 1000, 'swing');
-}
+};
 
 function listenForNavClick() {
   $('.nav-link').click(e => {
@@ -27,10 +37,11 @@ function listenForNavClick() {
     scrollPage(target);
     toggleMobileNav();
   });
-}
+};
 
 $(document).ready(function () {
   listenForMobileNavClick();
+  listenForArrowClick();
   listenForNavClick();
 
   // Hero - Particle Background
