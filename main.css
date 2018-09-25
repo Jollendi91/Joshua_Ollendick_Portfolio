@@ -30,6 +30,10 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 /* Mobile Navigation */
 
 .mobile-nav {
@@ -62,7 +66,7 @@ h1 {
   transition: all .5s ease;
 }
 
-span {
+.hamburger-menu span {
   display: block;
   width: 100%;
   height: 4px;
@@ -73,17 +77,17 @@ span {
   left: 0;
 }
 
-span:nth-child(1) {
+.hamburger-menu span:nth-child(1) {
   top: 0;
   transition: transform .5s ease, top .5s ease .5s;
 }
 
-span:nth-child(2) {
+.hamburger-menu span:nth-child(2) {
   top: 10px;
   transition: visibility .5s ease;
 }
 
-span:nth-child(3) {
+.hamburger-menu span:nth-child(3) {
   top: 20px;
   transition: transform .5s ease, top .5s ease .5s;
 }
@@ -148,14 +152,71 @@ main {
 }
 
 
-/* Hero */
+/* Hero Content */
 
 header {
   height: calc(100vh - 100px);
-  background-color: #495867;
   position: relative;
 }
 
+.header-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 15px;
+  text-align: left;
+  font-size: 1.17em;
+  color: #FDFFFC;
+}
+
+.header-content h3 {
+  font-weight: normal;
+}
+
+.header-content span {
+  color:#D7263D;
+  font-weight: bold;
+}
+
+.header-content a {
+  display: inline-block;
+  background: transparent;
+  color: #D7263D;
+  border: 3px solid;
+  padding: 0px 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* See more button */
+header button {
+  background: transparent;
+  border: none;
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: 15px;
+  left: 46%;
+}
+
+.more-arrow span {
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #FDFFFC;
+  position: absolute;
+}
+
+.more-arrow span:nth-child(1) {
+  transform: rotate(45deg);
+  left: -9px;
+}
+
+.more-arrow span:nth-child(2) {
+  transform: rotate(-45deg);
+  right: -9px;
+}
+
+/* Particle JS */
 canvas {
   display: block;
   vertical-align: bottom;
@@ -166,8 +227,9 @@ canvas {
   width: 100%;
   height: 100%;
   top: 0;
+  background: rgb(18,53,91);
+  background: linear-gradient(135deg, rgba(18,53,91,1) 0%, rgba(2,0,36,1) 100%);
+  z-index: -1;
 }
 
-img {
-  max-width: 100%;
-}
+/* About Section */
