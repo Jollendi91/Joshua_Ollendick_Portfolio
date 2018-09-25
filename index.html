@@ -5,53 +5,88 @@
     <title>Joshua Ollendick - Full Stack Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600|Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 
 <body>
-    <nav role="navigation">
+    
+    <div class="mobile-nav">
         <h1>Joshua Ollendick</h1>
-        <div>Open</div>
+        <button class="hamburger-menu" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav role="navigation" class="mobile-nav-links">
+        <ul>
+            <li id="about-link">About</li>
+            <li id="project-link">Projects</li>
+            <li id="contact-link">Contact</li>
+        </ul>
     </nav>
     <main role="main">
         <header role="banner">
-            <div>Self Portrait</div>
-            <p>I am a Full Stack Web Developer based in Kansas City, Kansas. I am currently available for work. Explore below to learn more about me and my work</p>
+            <div class="header-content">
+                <h2>Hey, I'm <span>Josh</span>.</h2>
+                <p>I'm a <span>Full-Stack Web Developer</span> based in Kansas City, Kansas. Take a look around to learn more about me and my recent projects.</p>
+                <p>I am <span>Available for Work</span>.</p>
+                <a href="mailto:joshua.ollendick@gmail.com">Get in touch</a>
+            </div>
+            <button class="more-arrow" aria-label="Go to About Section">
+                <span></span>
+                <span></span>
+            </button>
+            <div id="particles-js"></div>
         </header>
-        <section class="about-me">
-            <p>I consider myself a creator and a collaborator, a lover of science and a nerd for technology, a seeker of knowledge and a learner of life, an actor of the stage and a contributor of the arts. The ability to breathe life into an idea, to give form to something that previously did not exist, is one of the most exhilarating feelings for me. I believe technology should move us toward a future that works in harmony with our planet, not against it. I am fascinated by how developers such as myself can be a catalyst for this change. Feel free to contact me or view some of my recent work below. </p>
+        <section id="about" class="about-me">
+            <h2>About</h2>
+            <img src="./assets/Headshot.jpg" alt="Headshot of Joshua Ollendick" class="headshot"/>
+            <p>I consider myself a creator and a collaborator, a lover of science and a nerd for technology, a seeker of knowledge and a learner of life, an actor of the stage and a contributor of the arts. The ability to breathe life into an idea, to give form to something that previously did not exist, is one of the most exhilarating feelings for me.</p>
+            <p>I believe technology should move us toward a future that works in harmony with our planet, not against it. I am fascinated by how developers such as myself can be a catalyst for this change. Feel free to contact me or view some of my recent work below.</p>
         </section>
-        <section class="projects">
+        <div class="section-divider"></div>
+        <section id="projects" class="projects">
             <h2>Projects</h2>
-            <section>
-                <div class="project-mockup">Project Image</div>
-                <article class="project-description">
-                    <h3 class="project-title">Simplify</h3>
+            <article>
+                <h3 class="project-title">Simplify</h3>
+                <img class="project-img" src="./assets/Simplify_Website_Mockup_smaller.png" alt="Simplify Application Mockup"/>
+                <div class="project-description">
                     <div class="project-links">
                         <a href="#">Live Demo</a>
                         <a href="#">View Code</a>
                     </div>
                     <p class="project-description">Simplify is a budgeting application inspired by a zero-based
                         budgeting system. It helps break the process down into 3 easy steps and allows the user to
-                        track their spending is specified budget areas of their choosing. The process is flexible
+                        track their spending in budgeted areas of their choosing. The process is flexible
                         enough for the user to use the application in a way that works for them.</p>
                     <div class="project-skills">
+                        <h4>Made with:</h4>
                         <ul>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>PostgreSQL</li>
-                            <li>Mocha</li>
-                            <li>Travis</li>
+                            <li><i class="devicon-react-original colored"></i></li>
+                            <li><i class="devicon-nodejs-plain colored"></i></li>
+                            <li><i class="devicon-express-original colored"></i></li>
+                            <li><i class="devicon-postgresql-plain colored"></i></li>
+                            <li><i class="devicon-mocha-plain colored"></i></li>
+                            <li><i class="devicon-travis-plain colored"></i></li>
+                            <li><i class="devicon-heroku-original colored"></i></li>
                         </ul>
                     </div>
-                </article>
-            </section>
-
-            <section>
-                <div class="project-mockup">Project Image</div>
-                <article class="project-description">
-                    <h3 class="project-title">InStock</h3>
+                </div>
+            </article>
+            <div class="project-divider"></div>
+            <article>
+                <h3 class="project-title">InStock</h3>
+                <img class="project-img" src="./assets/InStock-Mockup-smaller.png" alt="Instock Application Mockup" />
+                <div class="project-description">
                     <div class="project-links">
                         <a href="#">Live Demo</a>
                         <a href="#">View Code</a>
@@ -60,24 +95,25 @@
                         have at home by storing them in a virtual pantry. Users can then search for recipes based on
                         ingredients contained within this pantry.</p>
                     <div class="project-skills">
+                        <h4>Made with:</h4>
                         <ul>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>MongoDB</li>
-                            <li>Mocha</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Travis</li>
+                            <li><i class="devicon-nodejs-plain colored"></i></li>
+                            <li><i class="devicon-express-original colored"></i></li>
+                            <li><i class="devicon-mongodb-plain colored"></i></li>
+                            <li><i class="devicon-mocha-plain colored"></i></li>
+                            <li><i class="devicon-html5-plain colored"></i></li>
+                            <li><i class="devicon-css3-plain colored"></i></li>
+                            <li><i class="devicon-javascript-plain colored"></i></li>
+                            <li><i class="devicon-jquery-plain colored"></i></li>
                         </ul>
                     </div>
-                </article>
-            </section>
-
-            <section>
-                <div class="project-mockup">Project Image</div>
-                <article class="project-description">
-                    <h3 class="project-title">Photo Palette</h3>
+                </div>
+            </article>
+            <div class="project-divider"></div>
+            <article>
+                <h3 class="project-title">Photo Palette</h3>
+                <img class="project-img" src="./assets/PhotoPalette-Mockup-smaller.png" alt="Photo Palette Appilcaiton Mockup"/>
+                <div class="project-description">
                     <div class="project-links">
                         <a href="#">Live Demo</a>
                         <a href="#">View Code</a>
@@ -87,32 +123,32 @@
                         palette generated from the photo. The color palette provides the user with the RGB and HEX
                         values of each generated color to be used for future projects. </p>
                     <div class="project-skills">
+                        <h4>Made with:</h4>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>Git</li>
+                            <li><i class="devicon-html5-plain colored"></i></li>
+                            <li><i class="devicon-css3-plain colored"></i></li>
+                            <li><i class="devicon-javascript-plain colored"></i></li>
+                            <li><i class="devicon-jquery-plain colored"></i></li>
+                            <li><i class="devicon-git-plain colored"></i></li>
                         </ul>
                     </div>
-                </article>
-            </section>
+                </div>
+            </article>
         </section>
-
-
-        <section>
-            <h2>Lets Chat!</h2>
+        <div class="section-divider"></div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <h3>Let's Connect!</h3>
             <p>I love helping people and meeting new faces. Reach out to me to talk about work, freelance, any questions you may have, or even just to chat. I would love to hear from you!</p>
             <div class="contact-links">
                 <ul>
-                    <li>Gmail</li>
-                    <li>Github</li>
-                    <li>LinkedIn</li>
+                    <li><i class="far fa-envelope"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li><i class="fab fa-github"></i></li>
                 </ul>
             </div>
         </section>
     </main>
     <footer role="content-info">&copy; Joshua Ollendick 2018</footer>
 </body>
-
 </html>
