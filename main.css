@@ -6,7 +6,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: #444;
-  text-align: center;
   line-height: 1.5;
   margin: 0;
 }
@@ -22,21 +21,46 @@ header {
 
 section {
   min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
+  padding: 6% 20px;
+  background-color: #FDFFFC;
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
+section p {
+  padding: 0 20px;
+  font-size: .9em;
+  line-height: 1.6;
+}
+
+.section-divider {
+  width: 70%;
+  margin: auto;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+  height: 55px;
+  padding: 5px;
+  width: 100px;
+  /* border-top: 2px solid #D7263D; */
+  border-left: 2px solid #D7263D;
+  display: inline-block;
 }
 
 button, a {
   cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
 }
 
 /* Mobile Navigation */
-
 .mobile-nav {
+  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,10 +68,10 @@ button, a {
   z-index: 10;
   display: flex;
   padding: 10px;
-  height: 100px;
   justify-content: space-between;
   align-items: center;
   background-color: #FDFFFC;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -133,6 +157,7 @@ h1 {
 .mobile-nav-links ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 .mobile-nav-links li {
@@ -187,7 +212,7 @@ header {
   text-decoration: none;
 }
 
-/* See more button */
+/* Hero Arrow */
 header button {
   background: transparent;
   border: none;
@@ -233,3 +258,8 @@ canvas {
 }
 
 /* About Section */
+
+img {
+  max-width: 100%;
+  padding: 0 20px;
+}
