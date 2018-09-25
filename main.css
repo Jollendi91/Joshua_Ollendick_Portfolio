@@ -14,11 +14,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-}
-
 header {
   padding: 12% 0;
 }
@@ -26,7 +21,12 @@ header {
 section {
   min-height: 200px;
   padding: 6% 20px;
+  margin: 20px 0;
   background-color: #FDFFFC;
+}
+
+section:last-child {
+  margin-bottom: 50px;
 }
 
 section p {
@@ -293,13 +293,24 @@ canvas {
 
 .project-skills ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
   padding: 0;
   margin: 10px 0;
   list-style: none;
-  font-size: 2em;
+  font-size: 1.5em;
 }
+
+.skills li {
+  width: 45px;
+  margin: 0 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+li aside {
+  font-size: .4em;
+}
+
 
 
 /*Contact Section */
@@ -328,4 +339,5 @@ canvas {
 footer {
   background-color: #FDFFFC;
   text-align: center;
+  padding: 1% 0;
 }
