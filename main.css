@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
 footer {
   padding: 1% 0;
   background-color: #aaa;
@@ -37,15 +41,18 @@ section p {
   border-bottom: 2px solid #EAEAEA;
 }
 
-h2 {
+section h2 {
   font-size: 1em;
   font-weight: normal;
   height: 55px;
   padding: 5px;
   width: 100px;
-  /* border-top: 2px solid #D7263D; */
   border-left: 2px solid #D7263D;
   display: inline-block;
+}
+
+img {
+  width: 100%;
 }
 
 button, a {
@@ -76,6 +83,7 @@ a {
 
 h1 {
   font-size: 1.25em;
+  font-weight: 100;
 }
 
 /* Hamburger Nav Button */
@@ -193,10 +201,6 @@ header {
   color: #FDFFFC;
 }
 
-.header-content h3 {
-  font-weight: normal;
-}
-
 .header-content span {
   color:#D7263D;
   font-weight: bold;
@@ -259,7 +263,41 @@ canvas {
 
 /* About Section */
 
-img {
-  max-width: 100%;
+.headshot {
   padding: 0 20px;
+}
+
+/* Project Section */
+.project-title {
+  display: inline-block;
+  width: 50%;
+  border-bottom: 2px solid #495867;
+  font-weight: 400;
+}
+
+.project-img {
+  margin-bottom: 15px;
+}
+
+.project-links {
+  text-align: center;
+}
+
+.project-links a {
+  margin: 0 5px;
+  border: 2px solid #12355B;
+  color: #FDFFFC;
+  background-color: #12355B;
+  padding: 2px 7px;
+}
+
+.project-links a:nth-child(1) {
+  color: #12355B;
+  background-color: #FDFFFC;
+}
+
+.project-divider {
+  width: 30%;
+  border-bottom: 2px solid gainsboro;
+  margin: 20px auto;
 }
