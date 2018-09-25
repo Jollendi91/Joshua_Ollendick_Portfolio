@@ -1,25 +1,40 @@
 
-function displayMobileNav() {
-    $('.hamburger-menu').click(() => {
-        $('.mobile-nav-links').toggleClass('expand');
-        $('.hamburger-menu').toggleClass('close');
-        if ($('.hamburger-menu').hasClass('close')) {
-            $('.hamburger-menu').attr('aria-label', 'Close navigation menu');
-        }
-        else {
-            $('.hamburger-menu').attr('aria-label', 'Open navigation menu');
-        }
-    })
+function listenForMobileNavClick() {
+  $('.hamburger-menu').click(() => {
+    toggleMobileNav();
+  })
 }
 
+function toggleMobileNav() {
+  $('.mobile-nav-links').toggleClass('expand');
+  $('.hamburger-menu').toggleClass('close');
+  if ($('.hamburger-menu').hasClass('close')) {
+      $('.hamburger-menu').attr('aria-label', 'Close navigation menu');
+  }
+  else {
+      $('.hamburger-menu').attr('aria-label', 'Open navigation menu');
+  }
+}
 
+// Navigation Scroll
+function scrollPage(target) {
+  $('html, body').animate({
+    scrollTop: ($(`#${target}`).offset().top - 100)
+}, 1000, 'swing');
+}
 
-
-
+function listenForNavClick() {
+    $('.nav-link').click(e => {
+      let target = e.target.innerText.toLowerCase();
+      console.log(target);
+      scrollPage(target); 
+      toggleMobileNav();
+    });
+}
 
 $(document).ready(function(){
-    displayMobileNav();
-
+    listenForMobileNavClick();
+    listenForNavClick();
 
     // Hero - Particle Background
     particlesJS('particles-js', {
