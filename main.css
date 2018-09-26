@@ -393,11 +393,17 @@ li aside {
 }
 
 .contact-links ul li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .contact-links ul li a {
   color: #495867;
+  transition: all .5s ease;
+}
+
+.contact-links ul li a:hover {
+  color: #D7263D;
+  transition: all .5s ease;
 }
 
 #contact h3 {
@@ -452,7 +458,7 @@ footer {
 }
 
 @media screen and (min-width: 850px) {
-
+  /* About Section */
   #about {
     display: grid;
     grid-template-columns: 150px 1fr 1fr;
@@ -467,6 +473,7 @@ footer {
     grid-template-columns: 150px 1fr;
   }
 
+  /* Project Section */
   .project-skills ul {
     font-size: 2em;
   }
@@ -474,5 +481,9 @@ footer {
   .project-skills ul li {
     width: 60px;
   }
-  
+
+  /* Contact Section */
+  .contact-links ul {
+    justify-content: start;
+  }
 }
