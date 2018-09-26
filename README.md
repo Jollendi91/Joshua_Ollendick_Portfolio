@@ -24,6 +24,8 @@ This portfolio is meant to show off all the projects that I have worked on durin
       
   4. Styling & Progressive Enhancement
       - Before jumping into styles, I first decided on a color scheme and the fonts I wanted to use on my site. These choices ended up morphing slightly over time, but it gave me a good starting off point. 
-      - I then proceeded to style the entire website for a mobile-first design, starting with a mobile-responsive nav, then the hero section, about, projects, and finally contact section. 
+      - I then proceeded to style the entire website for a mobile-first design, section by section. 
+      - Next, I added media queries to responsively adjust the layout depending on the size of the viewport. 
+      - Once this was complete and I was happy with the design. I implemented some interactivity such as CSS transitions and animations as well as auto-scrolling when clicking on navigation links. 
       
       
