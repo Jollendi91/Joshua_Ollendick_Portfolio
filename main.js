@@ -1,3 +1,12 @@
+// Scroll to Top
+function listenForLogoClick() {
+  $('.logo-header').click(() => {
+    $('html, body').animate({
+      scrollTop: ($('header').offset().top - 100)
+    }, 1000, 'swing');
+  });
+};
+
 // Handle Mobile Naviagation Display
 function listenForMobileNavClick() {
   $('.hamburger-menu').click(() => {
@@ -22,7 +31,7 @@ function listenForArrowClick() {
       scrollTop: ($('#about').offset().top - 100)
     }, 1000, 'swing');
   });
-}
+};
 
 // Navigation Scroll
 function scrollPage(target) {
@@ -40,6 +49,7 @@ function listenForNavClick() {
 };
 
 $(document).ready(function () {
+  listenForLogoClick();
   listenForMobileNavClick();
   listenForArrowClick();
   listenForNavClick();
