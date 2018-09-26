@@ -19,13 +19,20 @@
 
 <body>
 
-    <div class="mobile-nav">
+    <div class="nav">
         <h1>Joshua Ollendick</h1>
         <button class="hamburger-menu" aria-label="Open navigation menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
+        <nav role="navigation" class="desktop-nav-links">
+                <ul>
+                    <li class="nav-link">About</li>
+                    <li class="nav-link">Projects</li>
+                    <li class="nav-link">Contact</li>
+                </ul>
+            </nav>
     </div>
     <nav role="navigation" class="mobile-nav-links">
         <ul>
@@ -51,13 +58,15 @@
         <section id="about" class="about-me">
             <h2>About</h2>
             <img src="./assets/Headshot.jpg" alt="Headshot of Joshua Ollendick" class="headshot" />
-            <p>I consider myself a creator and a collaborator, a lover of science and a nerd for technology, a seeker
-                of knowledge and a learner of life, an actor of the stage and a contributor of the arts. The ability to
-                breathe life into an idea, to give form to something that previously did not exist, is one of the most
-                exhilarating feelings for me.</p>
-            <p>I believe technology should move us toward a future that works in harmony with our planet, not against
-                it. I am fascinated by how developers such as myself can be a catalyst for this change. Feel free to
-                contact me or view some of my recent work below.</p>
+            <div class="about-content">
+                <p>I consider myself a creator and a collaborator, a lover of science and a nerd for technology, a seeker
+                    of knowledge and a learner of life, an actor of the stage and a contributor of the arts. The ability to
+                    breathe life into an idea, to give form to something that previously did not exist, is one of the most
+                    exhilarating feelings for me.</p>
+                <p>I believe technology should move us toward a future that works in harmony with our planet, not against
+                    it. I am fascinated by how developers such as myself can be a catalyst for this change. Feel free to
+                    contact me or view some of my recent work below.</p>
+            </div>
         </section>
         <div class="section-divider"></div>
         <section id="projects" class="projects">
@@ -67,9 +76,9 @@
                 <img class="project-img" src="./assets/Simplify_Website_Mockup_smaller.png" alt="Simplify Application Mockup" />
                 <div class="project-description">
                     <div class="project-links">
-                        <a href="https://gentle-escarpment-27186.herokuapp.com/" target="_blank">Live Demo</a>
-                        <a href="https://github.com/Jollendi91/simplify-budgeting-api" target="_blank">View Code</a>
-                    </div>
+                            <a href="https://gentle-escarpment-27186.herokuapp.com/" target="_blank">Live Demo</a>
+                            <a href="https://github.com/Jollendi91/simplify-budgeting-api" target="_blank">View Code</a>
+                        </div>
                     <p class="project-description">Simplify is a budgeting application inspired by a zero-based
                         budgeting system. It helps break the process down into 3 easy steps and allows the user to
                         track their spending in budgeted areas of their choosing. The process is flexible
@@ -206,16 +215,18 @@
         <div class="section-divider"></div>
         <section id="contact">
             <h2>Contact</h2>
-            <h3>Let's Connect!</h3>
-            <p>I love helping people and meeting new faces. Reach out to me to talk about work, freelance, any
-                questions you may have, or even just to chat. I would love to hear from you!</p>
-            <div class="contact-links">
-                <ul>
-                    <li><a href="mailto:joshua.ollendick@gmail.com"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/joshua-ollendick/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/Jollendi91" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
-            </div>
+            <article>
+                <h3>Let's Connect!</h3>
+                <p>I love helping people and meeting new faces. Reach out to me to talk about work, freelance, any
+                    questions you may have, or even just to chat. I would love to hear from you!</p>
+                <div class="contact-links">
+                    <ul>
+                        <li><a href="mailto:joshua.ollendick@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/joshua-ollendick/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Jollendi91" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
     <footer role="content-info">&copy; Joshua Ollendick 2018</footer>
