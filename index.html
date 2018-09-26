@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600|Open+Sans:300" rel="stylesheet">
@@ -17,27 +18,35 @@
 </head>
 
 <body>
-    
-    <div class="mobile-nav">
+
+    <div class="nav">
         <h1>Joshua Ollendick</h1>
         <button class="hamburger-menu" aria-label="Open navigation menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
+        <nav role="navigation" class="desktop-nav-links">
+                <ul>
+                    <li class="nav-link">About</li>
+                    <li class="nav-link">Projects</li>
+                    <li class="nav-link">Contact</li>
+                </ul>
+            </nav>
     </div>
     <nav role="navigation" class="mobile-nav-links">
         <ul>
-            <li id="about-link">About</li>
-            <li id="project-link">Projects</li>
-            <li id="contact-link">Contact</li>
+            <li class="nav-link">About</li>
+            <li class="nav-link">Projects</li>
+            <li class="nav-link">Contact</li>
         </ul>
     </nav>
     <main role="main">
         <header role="banner">
             <div class="header-content">
                 <h2>Hey, I'm <span>Josh</span>.</h2>
-                <p>I'm a <span>Full-Stack Web Developer</span> based in Kansas City, Kansas. Take a look around to learn more about me and my recent projects.</p>
+                <p>I'm a <span>Full-Stack Web Developer</span> based in Kansas City, Kansas. Take a look around to
+                    learn more about me and my recent projects.</p>
                 <p>I am <span>Available for Work</span>.</p>
                 <a href="mailto:joshua.ollendick@gmail.com">Get in touch</a>
             </div>
@@ -48,35 +57,63 @@
         </header>
         <section id="about" class="about-me">
             <h2>About</h2>
-            <img src="./assets/Headshot.jpg" alt="Headshot of Joshua Ollendick" class="headshot"/>
-            <p>I consider myself a creator and a collaborator, a lover of science and a nerd for technology, a seeker of knowledge and a learner of life, an actor of the stage and a contributor of the arts. The ability to breathe life into an idea, to give form to something that previously did not exist, is one of the most exhilarating feelings for me.</p>
-            <p>I believe technology should move us toward a future that works in harmony with our planet, not against it. I am fascinated by how developers such as myself can be a catalyst for this change. Feel free to contact me or view some of my recent work below.</p>
+            <img src="./assets/Headshot.jpg" alt="Headshot of Joshua Ollendick" class="headshot" />
+            <div class="about-content">
+                <p>I consider myself a creator and a collaborator, a lover of science and a nerd for technology, a seeker
+                    of knowledge and a learner of life, an actor of the stage and a contributor of the arts. The ability to
+                    breathe life into an idea, to give form to something that previously did not exist, is one of the most
+                    exhilarating feelings for me.</p>
+                <p>I believe technology should move us toward a future that works in harmony with our planet, not against
+                    it. I am fascinated by how developers such as myself can be a catalyst for this change. Feel free to
+                    contact me or view some of my recent work below.</p>
+            </div>
         </section>
         <div class="section-divider"></div>
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <article>
                 <h3 class="project-title">Simplify</h3>
-                <img class="project-img" src="./assets/Simplify_Website_Mockup_smaller.png" alt="Simplify Application Mockup"/>
+                <img class="project-img" src="./assets/Simplify_Website_Mockup_smaller.png" alt="Simplify Application Mockup" />
                 <div class="project-description">
                     <div class="project-links">
-                        <a href="#">Live Demo</a>
-                        <a href="#">View Code</a>
-                    </div>
+                            <a href="https://gentle-escarpment-27186.herokuapp.com/" target="_blank">Live Demo</a>
+                            <a href="https://github.com/Jollendi91/simplify-budgeting-api" target="_blank">View Code</a>
+                        </div>
                     <p class="project-description">Simplify is a budgeting application inspired by a zero-based
                         budgeting system. It helps break the process down into 3 easy steps and allows the user to
                         track their spending in budgeted areas of their choosing. The process is flexible
                         enough for the user to use the application in a way that works for them.</p>
                     <div class="project-skills">
                         <h4>Made with:</h4>
-                        <ul>
-                            <li><i class="devicon-react-original colored"></i></li>
-                            <li><i class="devicon-nodejs-plain colored"></i></li>
-                            <li><i class="devicon-express-original colored"></i></li>
-                            <li><i class="devicon-postgresql-plain colored"></i></li>
-                            <li><i class="devicon-mocha-plain colored"></i></li>
-                            <li><i class="devicon-travis-plain colored"></i></li>
-                            <li><i class="devicon-heroku-original colored"></i></li>
+                        <ul class="skills">
+                            <li>
+                                <i class="devicon-react-original colored"></i>
+                                <aside>React</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-nodejs-plain colored"></i>
+                                <aside>NodeJS</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-express-original colored"></i>
+                                <aside>Express</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-postgresql-plain colored"></i>
+                                <aside>Postgres</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-mocha-plain colored"></i>
+                                <aside>Mocha</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-travis-plain colored"></i>
+                                <aside>Travis</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-heroku-original colored"></i>
+                                <aside>Heroku</aside>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -87,23 +124,49 @@
                 <img class="project-img" src="./assets/InStock-Mockup-smaller.png" alt="Instock Application Mockup" />
                 <div class="project-description">
                     <div class="project-links">
-                        <a href="#">Live Demo</a>
-                        <a href="#">View Code</a>
+                        <a href="https://instock-pantry-app.herokuapp.com/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Jollendi91/instock-pantry-app" target="_blank">View Code</a>
                     </div>
                     <p class="project-description">InStock is an app that helps users keep track of the food items they
                         have at home by storing them in a virtual pantry. Users can then search for recipes based on
                         ingredients contained within this pantry.</p>
                     <div class="project-skills">
                         <h4>Made with:</h4>
-                        <ul>
-                            <li><i class="devicon-nodejs-plain colored"></i></li>
-                            <li><i class="devicon-express-original colored"></i></li>
-                            <li><i class="devicon-mongodb-plain colored"></i></li>
-                            <li><i class="devicon-mocha-plain colored"></i></li>
-                            <li><i class="devicon-html5-plain colored"></i></li>
-                            <li><i class="devicon-css3-plain colored"></i></li>
-                            <li><i class="devicon-javascript-plain colored"></i></li>
-                            <li><i class="devicon-jquery-plain colored"></i></li>
+                        <ul class="skills">
+                            <li>
+                                <i class="devicon-nodejs-plain colored"></i>
+                                <aside>NodeJS</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-express-original colored"></i>
+                                <aside>Express</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-mongodb-plain colored"></i>
+                                <aside>MongoDB</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-mocha-plain colored"></i>
+                                <aside>Mocha</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-html5-plain colored"></i>
+                                <aside>HTML</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-css3-plain colored"></i>
+                                <aside>CSS</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <aside>JavaScript</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-jquery-plain colored"></i>
+                                <aside>jQuery
+
+                                </aside>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -111,11 +174,11 @@
             <div class="project-divider"></div>
             <article>
                 <h3 class="project-title">Photo Palette</h3>
-                <img class="project-img" src="./assets/PhotoPalette-Mockup-smaller.png" alt="Photo Palette Appilcaiton Mockup"/>
+                <img class="project-img" src="./assets/PhotoPalette-Mockup-smaller.png" alt="Photo Palette Appilcaiton Mockup" />
                 <div class="project-description">
                     <div class="project-links">
-                        <a href="#">Live Demo</a>
-                        <a href="#">View Code</a>
+                        <a href="https://jollendi91.github.io/photo-palette-generator/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Jollendi91/photo-palette-generator" target="_blank">View Code</a>
                     </div>
                     <p class="project-description">Photo Palette allows users to search the Unsplash photo database for
                         color inspiration. Once a user discovers a photo they find appealing they can have a color
@@ -123,12 +186,27 @@
                         values of each generated color to be used for future projects. </p>
                     <div class="project-skills">
                         <h4>Made with:</h4>
-                        <ul>
-                            <li><i class="devicon-html5-plain colored"></i></li>
-                            <li><i class="devicon-css3-plain colored"></i></li>
-                            <li><i class="devicon-javascript-plain colored"></i></li>
-                            <li><i class="devicon-jquery-plain colored"></i></li>
-                            <li><i class="devicon-git-plain colored"></i></li>
+                        <ul class="skills">
+                            <li>
+                                <i class="devicon-html5-plain colored"></i>
+                                <aside>HTML</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-css3-plain colored"></i>
+                                <aside>CSS</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <aside>JavaScript</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-jquery-plain colored"></i>
+                                <aside>jQuery</aside>
+                            </li>
+                            <li>
+                                <i class="devicon-git-plain colored"></i>
+                                <aside>Git</aside>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -137,17 +215,21 @@
         <div class="section-divider"></div>
         <section id="contact">
             <h2>Contact</h2>
-            <h3>Let's Connect!</h3>
-            <p>I love helping people and meeting new faces. Reach out to me to talk about work, freelance, any questions you may have, or even just to chat. I would love to hear from you!</p>
-            <div class="contact-links">
-                <ul>
-                    <li><i class="far fa-envelope"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                    <li><i class="fab fa-github"></i></li>
-                </ul>
-            </div>
+            <article>
+                <h3>Let's Connect!</h3>
+                <p>I love helping people and meeting new faces. Reach out to me to talk about work, freelance, any
+                    questions you may have, or even just to chat. I would love to hear from you!</p>
+                <div class="contact-links">
+                    <ul>
+                        <li><a href="mailto:joshua.ollendick@gmail.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/joshua-ollendick/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/Jollendi91" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </article>
         </section>
     </main>
     <footer role="content-info">&copy; Joshua Ollendick 2018</footer>
 </body>
+
 </html>
