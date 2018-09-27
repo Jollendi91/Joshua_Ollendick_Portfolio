@@ -107,13 +107,13 @@ h1 {
   padding: 0 15px;
   margin: 0 80px;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .desktop-nav-links li:hover {
-  font-size: 1.3em;
+  transform: scale(1.1);
   color: #D7263D;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 /* Hamburger Nav Button */
@@ -125,7 +125,7 @@ h1 {
   border: none;
   outline: none;
   background: none;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .hamburger-menu span {
@@ -141,35 +141,35 @@ h1 {
 
 .hamburger-menu span:nth-child(1) {
   top: 0;
-  transition: transform .5s ease, top .5s ease .5s;
+  transition: transform .3s ease, top .3s ease .3s;
 }
 
 .hamburger-menu span:nth-child(2) {
   top: 10px;
-  transition: visibility .5s ease;
+  transition: visibility .3s ease;
 }
 
 .hamburger-menu span:nth-child(3) {
   top: 20px;
-  transition: transform .5s ease, top .5s ease .5s;
+  transition: transform .3s ease, top .3s ease .3s;
 }
 
 .close span:nth-child(1) {
   transform: rotate(45deg);
   top: 10px;
-  transition: top .5s ease, transform .5s ease .5s;
+  transition: top .3s ease, transform .3s ease .3s;
 }
 
 .close span:nth-child(2) {
   visibility: hidden;
-  transition: all .5s ease;
-  transition: visibility .5s ease;
+  transition: all .3s ease;
+  transition: visibility .3s ease;
 }
 
 .close span:nth-child(3) {
   transform: rotate(-45deg);
   top: 10px;
-  transition: top .5s ease, transform .5s ease .5s;
+  transition: top .3s ease, transform .3s ease .3s;
 }
 
 /*Mobile Nav Links*/
@@ -203,13 +203,12 @@ h1 {
   border-top: 1px solid #444;
   font-size: 1.25em;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .mobile-nav-links li:hover {
-  font-size: 1.4em;
   color: #D7263D;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .mobile-nav-links li:last-child {
@@ -252,13 +251,12 @@ header {
   padding: 0px 5px;
   font-weight: bold;
   text-decoration: none;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .header-content a:hover {
-  padding: 2px 7px;
-  font-size: 1.2em;
-  transition: all .5s ease;
+  transform: scale(1.1);
+  transition: all .3s ease;
 }
 
 /* Hero Arrow */
@@ -328,18 +326,19 @@ canvas {
 }
 
 .project-links a {
-  margin: 0 5px;
-  border: 2px solid #12355B;
+  display: inline-block;
   color: #FDFFFC;
   font-weight: bold;
+  border: 2px solid #12355B;
   background-color: #12355B;
+  margin: 0 10px;
   padding: 2px 7px;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .project-links a:hover {
-  padding: 4px 9px;
-  transition: all .5s ease;
+  transform: scale(1.1);
+  transition: all .3s ease;
 }
 
 .project-links a:nth-child(1) {
@@ -382,6 +381,9 @@ li aside {
 
 
 /*Contact Section */
+#contact {
+  height: calc(75vh - 100px);
+}
 
 .contact-links ul {
   display: flex;
@@ -398,12 +400,12 @@ li aside {
 
 .contact-links ul li a {
   color: #495867;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 .contact-links ul li a:hover {
   color: #D7263D;
-  transition: all .5s ease;
+  transition: all .3s ease;
 }
 
 #contact h3 {
@@ -474,6 +476,10 @@ footer {
   }
 
   /* Project Section */
+  .project-divider {
+    visibility: hidden;
+  }
+
   .project-skills ul {
     font-size: 2em;
   }
