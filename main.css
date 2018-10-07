@@ -43,7 +43,7 @@ section p {
 }
 
 section h2 {
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: normal;
   height: 55px;
   padding: 5px 10px;
@@ -313,6 +313,7 @@ canvas {
 }
 
 /* Project Section */
+
 .project-title {
   display: inline-block;
   width: 50%;
@@ -471,6 +472,10 @@ footer {
   }
 
   /* Project Section */
+  article {
+    margin-top: 60px;
+  }
+
   .project-divider {
     visibility: hidden;
   }
